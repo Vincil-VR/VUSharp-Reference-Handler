@@ -1,0 +1,23 @@
+{
+  "name": "com.vincil.vusharp.reference-handler",
+  "version": "0.1.0",
+  "displayName": "VUSharp Reference Handler",
+  "description": "A scene GameObject singleton to help handle references in Udon",
+  "unity": "2022.3",
+  "unityRelease": "22f1",
+  "author": {
+    "email": "vincilvrdev@gmail.com",
+    "name": "Vincil",
+    "url": "https://github.com/Vincil-VR"
+  },
+  "dependencies": {
+    "com.vincil.vusharp.data-extensions": "0.1.0"
+  },
+  "vpmDependencies": {
+    "com.vrchat.worlds": "3.9.0",
+    "com.vincil.vusharp.data-extensions": "0.1.0"
+  },
+  "resolutionStrategy": "highestMinor",
+  "documentationUrl": "https://github.com/Vincil-VR/",
+  "license": "MIT"
+}
