@@ -14,8 +14,8 @@
     "com.vincil.vusharp.data-extensions": "0.1.0"
   },
   "vpmDependencies": {
-    "com.vrchat.worlds": "3.9.0",
-    "com.vincil.vusharp.data-extensions": "0.1.0"
+    "com.vrchat.worlds": "3.x.x",
+    "com.vincil.vusharp.data-extensions": "0.x.x"
   },
   "resolutionStrategy": "highestMinor",
   "documentationUrl": "https://github.com/Vincil-VR/",
