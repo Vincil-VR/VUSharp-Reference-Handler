@@ -105,7 +105,7 @@ namespace Vincil.VUSharp.ReferenceHandler
 
         }
 
-        public override UdonSharpBehaviour GetPlayerObject(VRCPlayerApi player, string className)
+        public override UdonSharpBehaviour GetPlayerObject(string className, VRCPlayerApi player)
         {
             if (!Utilities.IsValid(player))
             {

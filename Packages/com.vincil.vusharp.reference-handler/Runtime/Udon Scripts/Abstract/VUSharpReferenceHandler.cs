@@ -62,7 +62,7 @@ namespace Vincil.VUSharp.ReferenceHandler
         /// <param name="udonTypeName">The Udon type name of the desired UdonSharpBehaviour.</param>
         /// <returns>The <see cref="UdonSharpBehaviour"/> instance corresponding to the specified player and Udon type name, or <see
         /// langword="null"/> if no matching object is found.</returns>
-        public abstract UdonSharpBehaviour GetPlayerObject(VRCPlayerApi player, string udonTypeName);
+        public abstract UdonSharpBehaviour GetPlayerObject(string udonTypeName, VRCPlayerApi player);
         #endregion
     }
 }
