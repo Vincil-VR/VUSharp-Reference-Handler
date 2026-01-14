@@ -12,6 +12,32 @@ namespace Vincil.VUSharp.ReferenceHandler
         DataDictionary singletons = new DataDictionary();
         DataDictionary playerObjectsByID = new DataDictionary();
 
+
+        [SerializeField] private UdonSharpBehaviour _logger;
+        public override UdonSharpBehaviour Logger
+        {
+            get
+            {
+                if(_logger == null)
+                {
+                    Debug.LogError("[ReferenceHandler] Logger has not been set.");
+                }
+                return _logger;
+            }
+            protected set
+            {
+                if (_logger == null)
+                {
+                    _logger = value;
+                }
+                else
+                {
+                    Debug.LogWarning("[ReferenceHandler] Logger has already been set. Overriding.");
+                    _logger = value;
+                }
+            }
+        }
+
         #region Singletons
         public override void AddSingleton(UdonSharpBehaviour singletonBehaviour)
         {

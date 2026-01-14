@@ -18,6 +18,10 @@ namespace Vincil.VUSharp.ReferenceHandler
             return referenceHandler;
         }
 
+        #region Logger
+        public abstract UdonSharpBehaviour Logger { get; protected set; }
+        #endregion
+
         #region Singletons
         /// <summary>
         /// Registers the specified <see cref="UdonSharpBehaviour"/> as a singleton.
