@@ -144,7 +144,8 @@ referenceHandler.AddPlayerObject(/*[instance of the PlayerObject to add]*/);
 This can be performed similarly to retrieving a singleton except you must also specify the owner.
 
 ```c#
-ExamplePlayerObject playerObject = (ExamplePlayerObject)referenceHandler.GetPlayerObject(GetUdonTypeName<ExamplePlayerObject>(), /*[VRCPlayerApi of the desired player]*/);
+VRCPlayerApi desiredPlayer;
+ExamplePlayerObject playerObject = (ExamplePlayerObject)referenceHandler.GetPlayerObject(GetUdonTypeName<ExamplePlayerObject>(), desiredPlayer);
 ```
   
 Retrieving `PlayerObjects` does not contain a backup method, but if you try retrieving them in the [`OnPlayerRestored`](https://creators.vrchat.com/worlds/udon/graph/event-nodes#onplayerrestored) event, that should give them enough time to run their start and add themselves.
