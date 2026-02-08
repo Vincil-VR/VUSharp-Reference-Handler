@@ -20,7 +20,7 @@ namespace Vincil.VUSharp.ReferenceHandler
             {
                 if(_logger == null)
                 {
-                    Debug.LogError("[ReferenceHandler] Logger has not been set.");
+                    Debug.Log("[ReferenceHandler] Logger has not been set.");
                 }
                 return _logger;
             }
